@@ -6,6 +6,7 @@ WORKDIR /GraphTheoryProject/Wiki-Relations
 
 # Copying the list of packages I will be using 
 COPY ./requirements.txt ./
+COPY ./cleaned_wiki_links.json ./
 
 # Installing the necessary packages
 RUN pip install --no-cache-dir -r requirements.txt
@@ -14,4 +15,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY src ./src
 
 # Defining the command to run with the python script
-CMD ["python", "src/main.py"]
+CMD ["python", "src/graph_construction.py"]

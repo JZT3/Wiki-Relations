@@ -59,7 +59,7 @@ def clean_data(input_file_path: str, output_file_path: str) -> None:
 
 def main() -> None:
     raw_data_file = 'Z:\Graph_Theory_Project\Wiki-Relations\wikipedia_links.json'
-    cleaned_data_file_path = '/GraphTheoryProject/Wiki-Relations/src/cleaned_wiki_links.json'
+    cleaned_data_file_path = 'cleaned_wiki_links.json'
     
     clean_data(raw_data_file, cleaned_data_file_path)
 

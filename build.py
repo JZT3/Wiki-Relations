@@ -43,6 +43,13 @@ def increment_version(part: str, version: str) -> str:
         raise ValueError(f"Unknown version part: {part}")
     
     increment = increments[part]
+
+    if part == "major":
+        minor = 0
+        patch = 0
+    elif part == "minor":
+        patch = 0
+    
     major += increment[0]
     minor += increment[1]
     patch += increment[2]
