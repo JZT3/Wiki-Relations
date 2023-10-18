@@ -97,12 +97,10 @@ def main() -> None:
     site = mwclient.Site('en.wikipedia.org')
     
     # Define seed articles
-    seed_articles = ['Information_theory','Entropy_(information_theory)',
-                     'Category_theory','Set_theory','Network_theory',
-                     'Queue_theory','Graph_theory','Topology','Functional_Analysis',
-                     'Coding_theory','Applied_mathematics','Algorthims','Mathematical_model',
-                     'Simulations','Operations_research'
-                     ]
+    seed_articles = ['Mathematics',
+                     'Computer_science' 
+                    ] # user input of desired list of starting seed articles
+
     
     # Fetch links using a multithreaded approach
     saved_links(seed_articles)

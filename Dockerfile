@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY src ./src
 
 # Defining the command to run with the python script
-CMD ["python", "src/data_cleaning.py"]
+CMD ["python", "src/main.py"]
