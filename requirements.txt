@@ -1,0 +1,4 @@
+wikipedia-api
+networkx
+json
+mwclient
