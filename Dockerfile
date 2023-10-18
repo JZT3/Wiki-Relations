@@ -1,8 +1,8 @@
 # Setting the python runtime
-FROM python:3.10-slim
+FROM python:3.12-slim
 
 # Setting the working directory in the container
-WORKDIR /the/workdir/path
+WORKDIR /GraphTheoryProject/Wiki-Relations
 
 # Copying the list of packages I will be using 
 COPY ./requirements.txt ./
@@ -11,7 +11,7 @@ COPY ./requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copying the directory contents into the container
-COPY ./src ./src
+COPY src ./src
 
 # Defining the command to run with the python script
-CMD ["python", "src.main:app"]
+CMD ["python", "src/main.py"]
