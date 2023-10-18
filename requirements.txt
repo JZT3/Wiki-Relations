@@ -2,3 +2,5 @@ wikipedia-api
 networkx
 mwclient
 matplotlib
+scipy
+numpy
