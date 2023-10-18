@@ -1,4 +1,5 @@
-
+import json
+import mwclient
 
 def collect_links(site, article_title, visited_articles, links, depth=2):
     """
